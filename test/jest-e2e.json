@@ -1,0 +1,19 @@
+{
+  "moduleFileExtensions": [
+    "js",
+    "json",
+    "ts"
+  ],
+  "rootDir": ".",
+  "testEnvironment": "node",
+  "testRegex": ".e2e-spec.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "moduleNameMapper": {
+    "@aq-index/api-service/(.*)": "<rootDir>/../libs/api-service/src/$1",
+    "@aq-index/api-service": "<rootDir>/../libs/api-service/src",
+    "@aq-index/environment-service/(.*)": "<rootDir>/../libs/environment-service/src/$1",
+    "@aq-index/environment-service": "<rootDir>/../libs/environment-service/src"
+  }
+}

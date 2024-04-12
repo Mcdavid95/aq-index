@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "types": ["node", "jest", "multer"],
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "strict": true,
+    "esModuleInterop": true,
+    "allowJs": true,
+    "paths": {
+      "@aq-index/api-service": [
+        "libs/api-service/src"
+      ],
+      "@aq-index/api-service/*": [
+        "libs/api-service/src/*"
+      ],
+      "@aq-index/environment-service": [
+        "libs/environment-service/src"
+      ],
+      "@aq-index/environment-service/*": [
+        "libs/environment-service/src/*"
+      ]
+    }
+  },
+  "exclude": ["**/*spec.ts", "dist"]
+}
